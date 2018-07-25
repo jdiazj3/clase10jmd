@@ -4,6 +4,8 @@ const express = require('express'),
 const hostname = 'localhost';
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const estudianteRouter = require('./routes/Router');
+
 
 const port = 3000;
 
@@ -30,7 +32,9 @@ app.all('/estudiantes', (req,res,next) => {
   next();
 });
 
-app.get('/estudiantes', (req,res,next) => {
+app.use('/estudiantes', estudianteRouter);
+
+/*app.get('/estudiantes', (req,res,next) => {
     res.end('Este metodo retornara la lista de estudiantes');
 });
 
@@ -48,7 +52,7 @@ app.post('/estudiantes', (req, res, next) => {
    app.delete('/estudiantes', (req, res, next) => {
        res.end('Eliminando todos los estudiantes');
    });
-
+*/
 
 const server = http.createServer(app);
 
