@@ -1,0 +1,21 @@
+{
+  "name": "clase10_jmd",
+  "version": "1.0.0",
+  "description": "PROYECTO NODE USANDO EXPRESS",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "clase10"
+  },
+  "author": "JOSE MANUEL DIAZ",
+  "license": "ISC"
+}
